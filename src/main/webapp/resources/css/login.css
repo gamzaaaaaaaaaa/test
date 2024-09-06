@@ -1,0 +1,60 @@
+ body {
+     background-color: #f4efec;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+ }
+ .login-container { 
+     display: flex;
+     flex-direction: row;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+     border-radius: 10px;
+     overflow: hidden;
+     background-color: white;
+     width: 800px; /* 크기 조정 */
+     max-width: 90%; /* 반응형 조정 */
+ }
+ .login-form {
+     padding: 40px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     flex: 1;
+ }
+ .login-form h5 {
+     margin-bottom: 20px;
+ }
+ .login-form .btn-google, .login-form .btn-kakao {
+     margin-bottom: 15px;
+ }
+ .login-form .btn-google {
+     background-color: #4285F4;
+     color: white;
+ }
+ .login-form .btn-kakao {
+     background-color: #FEE500;
+     color: black;
+     background-image: url('/ibom/resources/images/kakao_login.png'); /* 이미지 경로 설정 */
+     background-size: contain; /* 이미지 크기 조절 */
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 50px; /* 버튼 높이 설정 */
+     padding: 0; /* 패딩 제거 */
+     border: none; /* 테두리 제거 */
+ }
+ .login-form .btn-primary {
+     background-color: #a87e6e;
+     border-color: #a87e6e;
+ }
+ .image-container {
+     background: url('/ibom/resources/images/logo3.png') no-repeat center center;
+     background-size: cover;
+     width: 400px;
+     height: auto;
+ }
+ .error-message {
+     color: #dc3545; /* Bootstrap의 에러 색상 */
+     margin-bottom: 20px;
+ }

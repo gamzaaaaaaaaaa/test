@@ -1,0 +1,49 @@
+
+        *{
+			font-family: "Noto Sans KR", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 400;
+			font-style: normal;
+       	}
+       	
+        body {
+            background-color: #f4efec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            margin-top: 30px;
+            background-color: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+        table {
+            margin-top: 20px;
+        }
+        th, td {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .btn-view {
+            background-color: #a87e6e;
+            color: white;
+            border-radius: 5px;
+            padding: 5px 10px;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .btn-view:hover {
+            background-color: white;
+            color : black;
+        }
+        
+        .list-color{
+        	color:#a87e6e;
+        }

@@ -1,0 +1,20 @@
+.btn-circle {
+       width: 150px;
+       height: 150px;
+       border-radius: 50%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 18px;
+       text-align: center;
+       background-color: #a87e6e;
+       color: white;
+       box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* 오른쪽 아래로 연한 그림자 */
+       position: fixed;
+       bottom: 40px;
+       right: 40px;
+       z-index:2;
+   }
+   .btn-circle:hover {
+       background-color: #9c6f5e;
+   }

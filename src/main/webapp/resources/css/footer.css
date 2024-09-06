@@ -1,0 +1,59 @@
+
+		footer{		
+			width: 100%;
+    		height: 250px;
+    		background-color: #f4efec;
+
+    		font-size : 20px;
+    		font-weight : 700;
+    		color :#a87e6e;
+    		
+    		display:flex;
+    		align-items :center;
+		}
+		
+		.containers{
+			width: 70%;
+			margin: 0 auto;
+		
+			display:flex;
+    		align-items : flex-end;
+    		justify-content : space-between;
+
+		}
+		
+		.containers img {
+		    width: 170px;
+		    height: 170px;
+
+		}
+		
+		.footlogo{
+			display:flex;
+    		flex-direction: column;
+			align-items: center;
+    		justify-content: center;
+    
+		}
+		.foottext{
+			display : flex;
+		}
+		
+		.foottext p{
+			padding: 10px 0px 0px 20px;
+		}
+		
+		.footicon i{
+			padding : 15px;
+			
+			font-size : 25px !important;
+			
+			border : 2px solid white;
+			border-radius : 50%;
+		}
+		
+
+		
+		.footside{
+			text-align : center;
+		}

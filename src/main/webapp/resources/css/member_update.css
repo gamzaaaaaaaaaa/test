@@ -1,0 +1,65 @@
+ body {
+     background-color: #f4efec;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+ }
+ .container {
+     width: 100%;
+     max-width: 1000px;
+     background-color: white;
+     border-radius: 10px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+     padding: 30px;
+ }
+ .container h1 {
+     margin-bottom: 30px; /* 제목과 카드 사이의 간격 조정 */
+     color: #333;
+ }
+ .card-header {
+     background-color: #a87e6e;
+     color: white;
+     border-bottom: 1px solid #ddd;
+ }
+ .card-body {
+     padding: 20px;
+ }
+ .btn-primary {
+     background-color: #a87e6e;
+     border-color: #a87e6e;
+ }
+ .btn-primary:hover {
+     background-color: #8c6a56;
+     border-color: #8c6a56;
+ }
+ .btn-danger {
+     background-color: #dc3545;
+     border-color: #dc3545;
+ }
+ .btn-danger:hover {
+     background-color: #c82333;
+     border-color: #bd2130;
+ }
+ .form-label {
+     font-weight: bold;
+ }
+ .mb-3, .form-group {
+     margin-bottom: 20px; /* 항목 간의 간격 조정 */
+ }
+ .form-control {
+     border-radius: 5px;
+ }
+ .input-group {
+     display: flex;
+     align-items: center;
+ }
+ .input-group .form-control {
+     border-top-right-radius: 0;
+     border-bottom-right-radius: 0;
+ }
+ .input-group .btn-outline-secondary {
+     border-top-left-radius: 0;
+     border-bottom-left-radius: 0;
+ }

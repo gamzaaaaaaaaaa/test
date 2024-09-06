@@ -1,0 +1,106 @@
+
+        body {
+            background-color: #f4efec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            
+            font-family: "Noto Sans KR", sans-serif;
+   			font-optical-sizing: auto;
+    		font-style: normal;
+        }
+        .form-container {
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+            width: 800px;
+            max-width: 90%;
+        }
+        .form-content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+        }
+        .form-content h5 {
+            margin-bottom: 20px;
+        }
+        .image-container {
+            background: url('/ibom/resources/images/logo2.png') no-repeat center center;
+            background-size: contain;
+            width: 400px;
+            height: auto;
+        }
+        
+        .btn-childform{
+        	background-color:#a87e6e;
+        	border-radius: 8px;
+        	border-color: transparent;
+        	width :150px;
+        	height:40px;
+        	margin-top:10px;
+    
+        	color:white;
+        	text-align: center;
+        	font-size: 16px;
+        	margin-right: 10px;
+        	
+        	transition : all 0.2s;
+        }
+        
+       .btn-back
+       {
+        	background-color:#a87e6e;
+        	border-radius: 8px;
+        	border-color: transparent;
+        	width :150px;
+        	height:40px;
+        	margin-top:10px;
+    
+        	color:white;
+        	text-align: center;
+        	font-size: 16px;
+        	margin-left: 10px;
+        	text-decoration: none;
+        	display: inline-block;
+        	line-height: 40px;
+        	
+        	transition : all 0.2s;
+        }
+        
+        .btn-back:hover{
+        	background-color:white;
+        	color: black;
+        }
+        
+        .btn-childform:hover{
+        	background-color:white;
+        	color: black;
+        }
+        .text-center
+        {
+        	color :#a87e6e;
+        	font-size:25px;
+        	font-weight: 700;
+        }
+
+        .displayflex
+        {
+        	display:flex;                           
+        }
+        .displayflex div
+        {
+        	padding-right : 50px;                          
+        }
+        .button-container 
+        {
+            display: flex;
+            justify-content: center;
+        }
+        

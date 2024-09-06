@@ -1,0 +1,91 @@
+.outer-container {
+    background-color: #f0e4d7;
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 5% !important; /* !important 사용 */
+}
+
+/* 제목 스타일 */
+.outer-container h1 {
+    font-size: 36px; /* 제목의 크기 */
+    color: #a87e6e; /* 제목의 색상 */
+    margin-bottom: 20px; /* 제목 아래 여백 */
+    text-align: center; /* 제목 중앙 정렬 */
+}
+
+/* 부제목 스타일 */
+.outer-container .subtitle {
+    font-size: 20px !important; /* 부제목의 크기 */
+    color: #a87e6e; /* 부제목의 색상 */
+    margin: 0 auto; /* 부제목의 여백 제거 및 중앙 정렬 */
+    text-align: center; /* 부제목 중앙 정렬 */
+    display: inline-block; /* 중앙 정렬을 위해 인라인 블록으로 설정 */
+}
+
+
+
+.form-section {
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;
+      background-color: #ffffff;
+   }
+   .button-group {
+       display: flex;
+       justify-content: center; /* 중앙 정렬 */
+    margin-top: 1rem;
+}
+.button-group a {
+    margin: 0 0.5rem; /* 버튼 간격 조정 */
+    flex: none; /* 버튼의 너비를 자동으로 조정 */
+}
+   .form-label {
+   font-weight: bold;
+   display: block;
+   margin-bottom: 0.5rem;
+   position: relative;
+   padding-left: 20px; /* 여백 추가 */
+}
+.form-label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px; /* 선의 너비 */
+    height: 20px; /* 선의 높이 */
+    background-color: #a87e6e; /* 원하는 색상 */
+    border-radius: 2px; /* 선의 모서리 둥글게 */
+}
+   .form-content {
+       padding: 0.5rem;
+       border-top: 1px solid #ced4da;
+       border-radius: 0.25rem;
+       text-align: left;
+   }
+   .form-row {
+       display: flex;
+       align-items: center;
+       margin: 2rem;
+   }
+   .form-row label {
+       flex: 0 0 20%;
+       margin-right: 1rem;
+   }
+   .form-row .content {
+       flex: 1;
+   }
+
+   .form-content-textarea {
+       height: 150px; 
+   }
+   .btn-custom {
+       background-color: #a87e6e;
+       color: white;
+       border: none;
+       padding: 0.5rem 1rem;
+       text-decoration: none;
+       border-radius: 0.25rem;
+   }
+   .btn-custom:hover {
+       background-color: #8f6c5e;
+   } 

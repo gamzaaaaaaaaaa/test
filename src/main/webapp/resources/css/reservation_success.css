@@ -1,0 +1,78 @@
+body {
+    background-color: #f5f7f9; /* 배경색을 좀 더 부드럽게 변경 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* 그림자 좀 더 부드럽게 */
+    border-radius: 15px; /* 모서리 둥글게 */
+    overflow: hidden;
+    background-color: #ffffff; /* 카드 배경색을 화이트로 유지 */
+    width: 800px; /* 컨테이너 너비 늘리기 */
+    max-width: 90%; /* 최대 너비 조정 */
+    padding: 40px;
+    text-align: center;
+}
+
+.confirmation-container h5 {
+    margin-bottom: 20px;
+    color: #343a40; /* 제목 색상 */
+    font-weight: bold;
+    font-size: 1.8rem; /* 제목 크기 조정 */
+}
+
+.confirmation-details {
+    margin-bottom: 30px; /* 세부 정보와 버튼 간의 간격 조정 */
+    color: #495057; /* 세부 정보 텍스트 색상 */
+    font-size: 1.2rem; /* 폰트 크기 조정 */
+    line-height: 1.5; /* 줄 높이 조정 */
+}
+
+.confirmation-buttons {
+    display: flex;
+    gap: 15px; /* 버튼 간의 간격 조정 */
+    margin-bottom: 20px; /* 버튼과 다음 요소 간의 간격 조정 */
+}
+
+.confirmation-buttons a {
+    width: 180px; /* 버튼 너비 증가 */
+    padding: 12px; /* 버튼 패딩 조정 */
+    border-radius: 8px; /* 버튼 모서리 둥글게 */
+    font-size: 1rem; /* 버튼 폰트 크기 조정 */
+    transition: background-color 0.3s ease; /* 배경색 변화 애니메이션 */
+}
+
+.confirmation-buttons .btn-secondary {
+    background-color: #6c757d; /* 수정 버튼 색상 */
+    border: none;
+}
+
+.confirmation-buttons .btn-secondary:hover {
+    background-color: #5a6268; /* 수정 버튼 호버 색상 */
+}
+
+.confirmation-buttons .btn-danger {
+    background-color: #dc3545; /* 취소 버튼 색상 */
+    border: none;
+}
+
+.confirmation-buttons .btn-danger:hover {
+    background-color: #c82333; /* 취소 버튼 호버 색상 */
+}
+
+.btn-primary {
+    background-color: #007bff; /* 메인 페이지 버튼 색상 */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* 메인 페이지 버튼 호버 색상 */
+}

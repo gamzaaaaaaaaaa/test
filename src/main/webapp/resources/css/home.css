@@ -1,0 +1,119 @@
+
+ #introduce {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 50px 20px;
+     padding-top:12%;
+     padding-bottom:10%;
+     background: white;
+     border-radius: 8px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     max-width: 100%;
+     margin:3px 0px;
+     font-family: "Noto Sans KR", sans-serif !important;
+	 font-optical-sizing: auto;
+     font-weight: 400;
+	 font-style: normal;
+	 	}
+	 	
+ body {
+     background-color: #f9f9f9;
+     color: #4a4a4a;
+     margin: 0;
+     padding: 0;
+ }
+
+ .carousel-item img {
+     width: 100%; /* 이미지가 컨테이너의 너비에 맞게 조정 */
+     height: auto; /* 이미지의 비율 유지 */
+ }
+
+ .tit-wrap {
+     position: absolute;
+     top: 40%;
+     left: 22%;
+     font-size: 19px;
+     transform: translateY(-50%) rotate(0);
+     transform-origin: left center;
+     white-space: nowrap;
+     color: white; /* 텍스트 색상 설정 */
+     padding: 20px;
+     border-radius: 5px;
+     writing-mode: vertical-rl; /* 세로 쓰기 모드 설정 */
+     text-orientation: upright; /* 한글이 세로로 똑바로 보이도록 설정 */
+ }
+
+ .carousel-item {
+     position: relative; /* carousel-item을 position: relative로 설정하여 자식 요소의 절대 위치 설정 가능 */
+ }
+
+ #introduce {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 50px 20px;
+     padding-top:12%;
+     padding-bottom:10%;
+     background: white;
+     border-radius: 8px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     max-width: 100%;
+     margin: 5px auto;
+ }
+
+ .txt_wrap {
+ 	padding-left:5%;
+     max-width: 100%;
+     text-align: left;
+ }
+
+ .tit_box {
+     margin-bottom: 100px;
+ }
+
+ .s_tit {
+     font-size: 30px;
+     font-weight: bolder;
+     color: #a87e6e;
+ }
+
+ .tit {
+ 	
+     font-size: 180px;
+     font-weight: bolder;
+     color: #a87e6e;
+ }
+
+ .tit span.on {
+     display: block;
+ }
+
+ .tit_desc {
+     font-size: 40px;
+     font-weight: bolder;
+     color: #f4efec;
+     margin-top: 20px;
+ }
+
+ .tit_desc span.on {
+     display: block;
+ }
+
+ .txt_box {
+     font-size: 18px;
+     line-height: 1.6;
+ }
+
+ .txt_box span.on {
+     display: block;
+		color: #a87e6e;
+		font-weight: bolder;
+ }
+
+ img.rounded {
+     border-radius: 50%;
+     max-width: 150px;
+     height: auto;
+     margin-left: 20px;
+ }

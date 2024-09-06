@@ -1,0 +1,106 @@
+.outer-container {
+	    background-color: #f0e4d7;
+	    padding: 40px 0;
+	    text-align: center;
+	    margin-bottom: 5% !important; /* !important 사용 */
+	}
+	
+	/* 제목 스타일 */
+	.outer-container h1 {
+	    font-size: 36px; /* 제목의 크기 */
+	    color: #a87e6e; /* 제목의 색상 */
+	    margin-bottom: 20px; /* 제목 아래 여백 */
+	    text-align: center; /* 제목 중앙 정렬 */
+	}
+	
+	/* 부제목 스타일 */
+	.outer-container .subtitle {
+	    font-size: 20px !important; /* 부제목의 크기 */
+	    color: #a87e6e; /* 부제목의 색상 */
+	    margin: 0 auto; /* 부제목의 여백 제거 및 중앙 정렬 */
+	    text-align: center; /* 부제목 중앙 정렬 */
+	    display: inline-block; /* 중앙 정렬을 위해 인라인 블록으로 설정 */
+	}
+	
+	.btn-custom {
+    background-color: #a87e6e !important;
+    color: white !important;
+    border-radius: 30px !important;
+    padding: 10px 20px !important;
+    text-decoration: none !important;
+    transition: background-color 0.3s ease !important;
+    margin-right: 20px;
+}
+
+.btn-custom:hover {
+    background-color: #e0baba !important;
+    color: black !important;
+}
+	
+	.btn-primary {
+	    background-color: #a87e6e !important;
+	    border-color: #a87e6e !important;
+	}
+	
+	.btn-primary:hover {
+	    background-color: #917062 !important;
+	    border-color: #917062 !important;
+	}
+	
+	.badge {
+	    background-color: #a87e6e !important;
+	}
+
+	
+	table {
+	    width: 100%;
+	    margin: 20px 0;
+	    border-collapse: collapse;
+	}
+	
+	table th, table td {
+	    padding: 12px;
+	    border-bottom: 1px solid #ddd;
+	}
+	
+	table th {
+	    background-color: #f8f9fa;
+	}
+	
+	table tr:hover {
+	    background-color: #f1f1f1;
+	    cursor: pointer;
+	}
+	
+	.pagination {
+	    display: flex;
+	    justify-content: center;
+	    margin: 20px 0;
+	}
+	
+	.pagination a {
+	    display: inline-block;
+	    padding: 10px 15px;
+	    margin: 0 5px;
+	    border-radius: 5px;
+	    text-decoration: none;
+	    color: #4c5317;
+	    border: 1px solid #ddd;
+	    transition: background-color 0.3s;
+	}
+	
+	.pagination a.active, .pagination a:hover {
+	    background-color: #a87e6e;
+	    color: white;
+	    border-color: #a87e6e;
+	}
+	
+	.search-bar {
+	    display: flex;
+	    justify-content: space-between;
+	    margin: 20px 0;
+	}
+	
+	.search-bar select, .search-bar input, .search-bar button {
+	    margin-right: 10px;
+	}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+ 	<welcome-file-list>
+      <!-- 첫 페이지로 로드될 파일 설정 -->
+      <welcome-file>home.jsp</welcome-file>
+  	</welcome-file-list>
+   <!-- web.xml은 웹 애플리케이션의 초기 설정을 담당하며, 
+        스프링 애플리케이션의 루트 애플리케이션 
+        컨텍스트와 서블릿 애플리케이션 컨텍스트를 설정하는 역할을 한다 
+    -->
+
+   <!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
+   <!-- 공용으로 사용할 객체를 담는 컨테이너를 설정하는 파일을 지정 -->
+   <context-param>
+      <param-name>contextConfigLocation</param-name>
+      <!-- 공용 / 경로 지정 -->
+      <param-value>/WEB-INF/spring/root-context.xml 
+            </param-value>
+   </context-param>
+   
+   <!-- Creates the Spring Container shared by all Servlets and Filters -->
+   <!-- 웹 어플리케이션의 생명주기 이벤트 처리 루트 애플리케이션텍스트를 로드하는 역할 -->
+   <listener>
+      <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+   </listener>
+
+   <!-- Processes application requests -->
+   <!-- servlet : 프로그램 실행 이전에 생성하는 객체 -->
+   <servlet>
+   	  <!--매핑할 서블릿 이름 지정 : appServlet-->
+      <servlet-name>appServlet</servlet-name>
+       <!--서블릿 클래스 이름 지정-->
+      <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+ 	  <!-- 객체 생성 시 주는 파라미터 like 생성자(초기화) -->
+      <!--서블릿 초기화 매개변수 지정-->
+      <init-param>
+         <!--매개변수 이름 지정-->
+         <param-name>contextConfigLocation</param-name>
+         <!--초기화 매개변수의 값 지정 (파일 경로)--> 
+         <param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>
+      </init-param>
+      <!--서블릿이 로드되는 시점 지정 : 1=>서버가 시작 될 때 가장 먼저 로드--> 
+      <load-on-startup>1</load-on-startup>
+   </servlet>
+   
+   <!--서블릿을 URL 패턴에 매핑--> 
+   <servlet-mapping>
+      <!--매핑할 서블릿 이름 지정 : appServlet-->    
+      <servlet-name>appServlet</servlet-name>
+      <!--서블릿이 처리할 URL 패튼 지정 => /--> 
+      <url-pattern>/</url-pattern>
+   </servlet-mapping>
+   
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+</web-app>

@@ -1,0 +1,28 @@
+ /* 원형 버튼 스타일 */
+.btn-circle {
+    width: 60px; /* 버튼의 너비 */
+    height: 60px; /* 버튼의 높이 */
+    border-radius: 50%; /* 원형 버튼 */
+    font-size: 24px; /* 아이콘 크기 */
+    line-height: 60px; /* 아이콘 수직 정렬 */
+    text-align: center; /* 아이콘 수평 정렬 */
+	z-index:2;
+   	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+        
+.btn-circle i {
+    margin-top: 0; /* 아이콘 위쪽 여백 제거 */
+}
+
+.btn-home {
+    background-color: #a87e6e; /* 버튼 배경 색상 */
+    color: white; /* 아이콘 색상 */
+}
+
+.btn-home:hover {
+    background-color: #9c6f5e; /* 호버 시 배경 색상 */
+    color: white; /* 호버 시 아이콘 색상 */
+}

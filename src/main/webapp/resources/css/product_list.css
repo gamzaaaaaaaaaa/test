@@ -1,0 +1,247 @@
+
+.outer-container {
+    background-color: #f0e4d7;
+    padding: 40px 0;
+    text-align: center; /* 제목과 부제목을 중앙 정렬 */
+}
+
+/* 제목 스타일 */
+.outer-container h1 {
+    font-size: 36px; /* 제목의 크기 */
+    color: #a87e6e; /* 제목의 색상 */
+    margin-bottom: 20px; /* 제목 아래 여백 */
+    text-align: center; /* 제목 중앙 정렬 */
+}
+
+/* 부제목 스타일 */
+.outer-container .subtitle {
+    font-size: 20px !important; /* 부제목의 크기 */
+    color: #a87e6e; /* 부제목의 색상 */
+    margin: 0 auto; /* 부제목의 여백 제거 및 중앙 정렬 */
+    text-align: center; /* 부제목 중앙 정렬 */
+    display: inline-block; /* 중앙 정렬을 위해 인라인 블록으로 설정 */
+}
+
+/* 상품 리스트 Flex 정렬 */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 상품 카드 스타일 */
+.card {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    cursor: pointer; /* 클릭 가능하게 표시 */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+     flex: 1;
+}
+
+
+/* 개별 상품 카드 스타일 */
+.product-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+/* 상품 이미지 스타일 */
+.product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* 전체 상품 건수 배지 스타일 */
+.text-end .badge {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #a87e6e;
+    color: white;
+    border-radius: 50px;
+}
+
+/* 네비게이션 바의 중앙 정렬을 위한 CSS */
+.navbar {
+    display: flex; /* Flexbox를 사용하여 정렬 */
+    justify-content: center; /* 가운데 정렬 */
+}
+
+.navbar-nav {
+    display: flex; /* Flexbox로 내부 항목을 배치 */
+    justify-content: center; /* 가운데 정렬 */
+    width: 100%; /* 가로 전체를 차지하도록 설정 */
+    padding: 0; /* 기본 패딩 제거 */
+    margin: 0; /* 기본 여백 제거 */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px; /* 항목 사이의 간격 설정 */
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px; /* 링크의 패딩 조정 */
+    font-size: 16px; /* 폰트 크기 조정 */
+    color: #333; /* 링크의 기본 색상 */
+    text-decoration: none; /* 기본 밑줄 제거 */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a87e6e; /* 호버 시 링크 색상 변경 */
+}
+
+
+
+/* 사용자 정의 버튼 스타일 */
+.btn-custom {
+    background-color: #a87e6e !important;
+    color: white !important;
+    border-radius: 30px !important;
+    padding: 10px 20px !important;
+    text-decoration: none !important;
+    transition: background-color 0.3s ease !important;
+    margin-right: 20px;
+}
+
+.btn-custom:hover {
+    background-color: #e0baba !important;
+    color: black !important;
+}
+
+
+
+/* 카드 스타일 */
+.card {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-text{
+	font-size: 14px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.row.justify-content-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 페이지네이션 스타일 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a87e6e; /* 기본 페이지 버튼 색상 */
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #e0baba; /* 페이지 버튼 호버 색상 */
+    color: black;
+}
+
+.pagination .active {
+    background-color: #4f1c24; /* 현재 페이지 색상 */
+    color: white;
+    pointer-events: none; /* 현재 페이지는 클릭되지 않게 함 */
+}
+
+
+.card {
+    position: relative;
+}
+
+.badge-ranking {
+    position: absolute;
+    top: 10px; /* 배지를 이미지 상단에 배치 */
+    left: 10px; /* 배지를 이미지 왼쪽에 배치 */
+    background-color: rgba(0, 0, 0, 0.5); /* 배경색과 투명도 조절 */
+    color: white; /* 배지 텍스트 색상 */
+    padding: 5px 10px;
+    border-radius: 50%; /* 배지를 원형으로 만들기 */
+    font-size: 16px; /* 배지 텍스트 크기 */
+    font-weight: bold; /* 배지 텍스트 굵게 */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
